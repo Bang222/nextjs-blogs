@@ -53,32 +53,32 @@ const FilterBlogs: FC<FilterTabsProps> = (props) => {
           )
         })}
       </div>
-        <div className={"flex justify-center items-center"}>
-            <div className={'mb-12'}>
-                {filterBlog?.map((blog: BlogPost) => {
-                    return (
-                        <>
-                            <div
-                                key={blog.id}
-                                className={
-                                    'max-w-[27em] max-h-[20] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 transition-all duration-300'
-                                }
-                            >
-                                <a href={blog.url} rel={'noreferrer'}>
-                                    <BlogPreview
-                                        title={blog.title}
-                                        bodyText={blog.bodyText}
-                                        createdAt={blog.createdAt}
-                                        author={blog.author}
-                                        tags={blog.tags}
-                                    />
-                                </a>
-                            </div>
-                        </>
-                    )
-                })}
-            </div>
+      <div className={'flex justify-center items-center'}>
+        <div className={'mb-12'}>
+          {filterBlog?.map((blog: BlogPost) => {
+            return (
+              <>
+                <div
+                  key={blog.id}
+                  className={
+                    'max-w-[27em] max-h-[20] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinc-800 rounded-lg p-4 hover:bg-neutral-500 transition-all duration-300'
+                  }
+                >
+                  <a href={blog.url} rel={'noreferrer'}>
+                    <BlogPreview
+                      title={blog.title}
+                      bodyText={blog.bodyText}
+                      createdAt={blog.createdAt}
+                      author={blog.author}
+                      tags={blog.tags}
+                    />
+                  </a>
+                </div>
+              </>
+            )
+          })}
         </div>
+      </div>
     </>
   )
 }

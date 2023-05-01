@@ -15,11 +15,11 @@ export interface BlogPost {
   }
 }
 export interface BlogDetail {
-  title : string
+  title: string
   bodyHTML: string
   createdAt: string
   author: {
-    name:string
+    name: string
     avatar: string
     url: string
   }

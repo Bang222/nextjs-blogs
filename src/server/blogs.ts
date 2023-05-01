@@ -65,16 +65,15 @@ export async function getBlogsDetail(blogId: number): Promise<BlogDetail> {
   let discussion = res.data.repository.discussion
   const {
     title,
-      createdAt,
-      bodyHTML: html,
-      author : {url: authorUrl , login:authorName, avatarUrl: authorAvatar}
+    createdAt,
+    bodyHTML: html,
+    author: {url: authorUrl, login: authorName, avatarUrl: authorAvatar},
   } = discussion
   const detail = {
     title,
     createdAt,
     bodyHTML: html,
-    author : {url : authorUrl,name: authorName,avatar:authorAvatar}
+    author: {url: authorUrl, name: authorName, avatar: authorAvatar},
   }
   return detail
 }
-

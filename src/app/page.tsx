@@ -13,8 +13,12 @@ const Home: NextPage = () => {
           <h1 className="text-[3rem]">Welcome to Blogs Of Bang danh :v</h1>
           <p>Full stack blog with nextjs</p>
         </div>
-        <div className={'max-w-screen flex flex-col justify-center item-center text-[1.15rem] mt-12'}>
-          <ListBlogs/>
+        <div
+          className={
+            'max-w-screen flex flex-col justify-center item-center text-[1.15rem] mt-12'
+          }
+        >
+          <ListBlogs />
         </div>
       </section>
     </main>
